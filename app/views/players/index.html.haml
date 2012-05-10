@@ -1,0 +1,20 @@
+﻿%h1 Players
+
+%table
+	%tr
+		%th= "FName"
+		%th
+		%th
+		
+	-	@players.each do |player|
+		%tr
+			%td= player.fname
+			%td= player.lname
+			%td= player.atbats
+			%td= player.hits
+			%td= link_to 'Edit'
+			edit_player_path(player)
+			%td= link_to "Destroy", player,
+			:confirm => "Are you sure?", :method => :delete
+			
+= link_to "New Player", new_player_path

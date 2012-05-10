@@ -1,5 +1,11 @@
-﻿puts "running boot.rb"
+﻿#puts "running boot.rb"
 
 require 'rubygems'
-require 'bundler/setup'
+if defined?('bundler/setup')
+	#puts("'bundler/setup' exists")
+	require 'bundler/setup'
+	#puts("bundler/setup done")
+elsif
+	puts("no bundler/setup")
+end
 

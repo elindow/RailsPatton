@@ -1,0 +1,7 @@
+﻿=simple_form_for @player do |f|
+	= render 'shared/error_msg', model: @player
+	= f.input :fname
+	= f.input :lname
+	= f.input :atbats
+	= f.input :hits
+	= f.button :submit

@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
 gem 'pg'
+gem 'simple_form'
+gem 'haml'
 
 
 # Gems used only for assets and not required
@@ -33,3 +34,16 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test do
+	gem "rspec"
+	gem "rspec-rails"
+	gem "rspec-core"
+	gem "rspec-expectations"
+	gem "rspec-mocks"
+	gem "shoulda"
+	gem "fabrication"
+	gem "database_cleaner"	#remove changes from database
+	gem "faker"					#creates fake names, email addresses, etc.
+	gem "capybara"        #integration test
+end

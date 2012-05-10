@@ -4,12 +4,14 @@
 #------------
 #Script/rails is automatically run when you type `rails`. It loads `config/application.rb` and `config/boot.rb`.
 
-puts "Script running"
-
+#puts "Script running"
+#puts __FILE__
 APP_PATH = File.expand_path('../../config/application', __FILE__)
-puts "loaded application.rb"
+#puts "loaded application.rb"
 require File.expand_path('../../config/boot', __FILE__)
-puts "loaded boot.rb"
+#puts "loaded boot.rb"
+if defined? 'rails/commands'
+#puts "rails/commands ok"
 require 'rails/commands'
-
-puts "Script completed"
+end
+#puts "Script completed"

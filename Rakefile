@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailsPattonAuto::Application.load_tasks
+RailsPatton::Application.load_tasks

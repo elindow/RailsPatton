@@ -10,7 +10,12 @@ require 'rails/all'
 
 # libraries required for the application to run
 # include :default and current environment libraries
-Bundler.require :default, Rails.env
+if defined?(Bundler)
+	#puts "Bundler exists"
+	Bundler.require :default, Rails.env
+elsif
+	puts "No Bundler"
+end
 
 # application itself
 module RailsPatton
