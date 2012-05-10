@@ -1,11 +1,11 @@
 ﻿class PlayersController < ActionController::Base
 
 	def index
-		@players = Players.all
+		@players = Player.all
 	end
 
 	def show
-		@player = Player.find(params[id])
+		@player = Player.find(params[:id])
 	end
 
 	def new
@@ -24,15 +24,14 @@
 	def update
 		@player = Player.find(params[:id])
 		if @player.update attributes(params[:player])
-			redirect_to @player, notice:
-			"Player was successfully updated"
+			redirect_to @player, notice: "Player was successfully updated"
 		else
 			render action "edit"
 		end
 	end
 
 	def destroy
-		@player = Players.find(params[:id])
+		@player = Player.find(params[:id])
 		@player.destroy
 		redirect_to players_url
 	end

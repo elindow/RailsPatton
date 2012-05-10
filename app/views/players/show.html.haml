@@ -1,5 +1,8 @@
 ﻿%ul
 	%li= "FName: #{@player.fname}"
+	%li= "Lname: #{@player.lname}"
+	%li= "At Bats: #{@player.atbats}"
+	%li= "Hits: #{@player.hits}"
 	
 = link_to 'Edit', edit_player_path(@player)
 |
