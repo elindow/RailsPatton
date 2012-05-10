@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'pg'
 gem 'simple_form'
-gem 'haml'
+gem 'haml-rails'
+gem 'jquery-rails'
 
 
 # Gems used only for assets and not required

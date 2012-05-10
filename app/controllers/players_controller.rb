@@ -5,15 +5,15 @@
 	end
 
 	def show
-		@players = Players.find(params[id])
+		@player = Player.find(params[id])
 	end
 
 	def new
-		@player = Players.new
+		@player = Player.new
 	end
 
 	def create
-		@player = Players.new(params[:player])
+		@player = Player.new(params[:player])
 		if @player.save
 			redirect_to @thing, notice: "Player was successfully created"
 		else
@@ -22,7 +22,7 @@
 	end
 
 	def update
-		@player = player.find(params[:id])
+		@player = Player.find(params[:id])
 		if @player.update attributes(params[:player])
 			redirect_to @player, notice:
 			"Player was successfully updated"
