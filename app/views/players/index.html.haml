@@ -1,20 +1,32 @@
 ﻿%h1 Players
 
+="Player Count: #{Player.count}"
 %table
 	%tr
 		%th= "FName  "
 		%th= "LName  " 
+		%th= "Team   "
+		%th= "League  "
 		%th= "At Bats"
+		%th= "   Hits"
+		%th= "BA	"
+		%th= "Runs  "
+		%th= "RBI  "
 		
 	-	@players.each do |player|
 		%tr
 			%td= player.fname
 			%td= player.lname
+			%td= player.team
+			%td= player.league
 			%td= player.atbats
 			%td= player.hits
+			=@ba = (player.hits*1000)/player.atbats
+			%td= ".#{@ba}"
+			%td= player.runs
+			%td= player.rbi
 			%td= link_to 'Show', player_path(player)
 			%td= link_to 'Edit', edit_player_path(player)
-			%td= link_to "Destroy", player,
-			:confirm => "Are you sure?", :method => :delete
-			
+			%td= link_to "Destroy", player, :confirm => "Are you sure?", :method => :delete
+%br			
 = link_to "New Player", new_player_path

@@ -2,7 +2,11 @@
 	= render 'shared/error_msg', model: @player
 	= f.input :fname
 	= f.input :lname
+	= f.input :team
+	= f.input :league
 	= f.input :atbats
 	= f.input :hits
-	= f.input :team
+	= f.input :runs
+	= f.input :rbi
+	
 	= f.button :submit

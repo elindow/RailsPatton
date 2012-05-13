@@ -5,3 +5,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 RailsPatton::Application.load_tasks
+
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+task :rspec => :spec

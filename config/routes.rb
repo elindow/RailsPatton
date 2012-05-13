@@ -1,10 +1,10 @@
 RailsPatton::Application.routes.draw do
+	resources :players
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
-RailsPatton::Application.routes.draw do
-	resources :players
-end
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

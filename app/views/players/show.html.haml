@@ -1,8 +1,12 @@
 ﻿%ul
 	%li= "FName: #{@player.fname}"
 	%li= "Lname: #{@player.lname}"
+	%li= "Team: #{@player.team}"
+	%li= "League: #{@player.league}"
 	%li= "At Bats: #{@player.atbats}"
 	%li= "Hits: #{@player.hits}"
+	%li= "Runs: #{@player.runs}"	
+	%li= "Rbi: #{@player.rbi}"
 	
 = link_to 'Edit', edit_player_path(@player)
 |

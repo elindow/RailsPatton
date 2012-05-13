@@ -1,0 +1,15 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="6">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="708" startPos="0" endPos="0" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sites\RailsPatton\app\views\players\index.html.haml" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="384" startPos="56" endPos="56" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sites\RailsPatton\app\views\players\edit.html.haml" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="348" startPos="33" endPos="33" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sites\RailsPatton\app\views\players\new.html.haml" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="756" startPos="171" endPos="171" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sites\RailsPatton\app\views\players\_form.html.haml" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="576" startPos="0" endPos="0" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sites\RailsPatton\app\views\shared\_error_msg.html.haml" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="960" startPos="487" endPos="487" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sites\RailsPatton\Gemfile" />
+            <File firstVisibleLine="12" xOffset="0" scrollWidth="876" startPos="585" endPos="585" selMode="0" lang="Ruby" encoding="-1" filename="C:\Sites\RailsPatton\app\controllers\players_controller.rb" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="516" startPos="119" endPos="119" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sites\RailsPatton\app\views\players\show.html.haml" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
