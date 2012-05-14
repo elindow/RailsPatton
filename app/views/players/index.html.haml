@@ -21,8 +21,7 @@
 			%td= player.league
 			%td= player.atbats
 			%td= player.hits
-			=@ba = (player.hits*1000)/player.atbats
-			%td= ".#{@ba}"
+			%td= ".#{player.ba}"
 			%td= player.runs
 			%td= player.rbi
 			%td= link_to 'Show', player_path(player)

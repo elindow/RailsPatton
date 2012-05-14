@@ -47,4 +47,6 @@
 		@player.destroy
 		redirect_to players_url
 	end
+	
+
 end

@@ -9172,3 +9172,2058 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 00:26:56 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-13 01:11:13 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (1.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/new.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 01:11:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 01:11:13 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 09:58:03 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 09:58:04 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 09:58:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/Players" for 127.0.0.1 at 2012-05-13 09:58:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/Players"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 09:59:09 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 09:59:09 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 09:59:18 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 09:59:27 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 09:59:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 09:59:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 13:47:20 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 13:47:20 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 13:47:20 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-13 13:47:22 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (1.0ms)
+  Rendered players/_form.html.haml (8.0ms)
+  Rendered players/new.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 13:47:22 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 13:47:22 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:02:33 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `player' for #<#<Class:0x3a5f900>:0x3a4bef0>):
+    1: ﻿=@ba = (player.hits*1000)/player.atbats
+    2: 
+    3: %h1 Players
+    4: 
+  app/views/players/index.html.haml:1:in `_app_views_players_index_html_haml___587252942_30561912'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:03:50 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:03:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:03:50 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:04:08 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:04:08 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:04:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:06:38 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:06:38 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:06:39 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:10:49 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:10:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:10:50 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:12:45 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:12:45 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:12:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:13:12 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:13:12 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:13:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:14:18 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:14:19 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:14:19 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:14:22 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:14:22 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:14:22 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:14:23 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:14:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:14:23 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 14:21:03 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 14:21:03 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 14:21:03 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:37:01 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:37:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:37:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:37:40 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:37:41 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:37:41 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:38:11 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:38:11 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:38:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:38:36 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+ERROR: compiling _app_views_players_index_html_haml___587252942_58023696 RAISED C:/Sites/RailsPatton/app/views/players/index.html.haml:24: syntax error, unexpected '.'
+..._false_true_false_true_false((.#{player.hits*1000/player.atb...
+...                               ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:26: unknown regexp options - td
+C:/Sites/RailsPatton/app/views/players/index.html.haml:26: syntax error, unexpected $undefined
+));}</td>\n    <td>#{_hamlout.adjust_ta...
+          ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:27: syntax error, unexpected ')'
+));}</td>\n    <td>#{_hamlout....
+ ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:28: unknown regexp options - td
+C:/Sites/RailsPatton/app/views/players/index.html.haml:28: syntax error, unexpected $undefined
+));}</td>\n    <td>#{_hamlout.adjust_ta...
+          ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:29: syntax error, unexpected ')'
+));}</td>\n    <td>#{_hamlout....
+ ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:30: unknown regexp options - td
+C:/Sites/RailsPatton/app/views/players/index.html.haml:30: syntax error, unexpected $undefined
+));}</td>\n  </tr>\n", -1, false);end
+          ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:31: unknown regexp options - tabl
+unmatched close parenthesis: /tr>\n", -1, false);end
+_hamlout.push_text("</
+C:/Sites/RailsPatton/app/views/players/index.html.haml:31: syntax error, unexpected $undefined
+_hamlout.push_text("</table>\n<br>\n#{_hamlout.adjust_tabs...
+                             ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:31: syntax error, unexpected $undefined
+...lout.push_text("</table>\n<br>\n#{_hamlout.adjust_tabs(-1); ...
+...                               ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:32: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:35: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_players_index_html_haml___587252942_58023696(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "players/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Players</h1>\n#{
+
+_hamlout.format_script_false_false_false_true_false_true_false(("Player Count: #{Player.count}"
+));}\n<table>\n  <tr>\n    <th>#{_hamlout.adjust_tabs(3); 
+
+_hamlout.format_script_false_true_false_true_false_true_false(("FName  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("LName  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("Team   "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("League  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("At Bats"
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("   Hits"
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("BA	"
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("Runs  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("RBI  "
+));}</th>\n  </tr>\n", -1, false);
+	@players.each do |player|
+_hamlout.push_text("  <tr>\n    <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((player.fname
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.lname
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.team
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.league
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.atbats
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.hits
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((.#{player.hits*1000/player.atbats}
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.runs
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.rbi
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Show', player_path(player)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Edit', edit_player_path(player)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Destroy", player, :confirm => "Are you sure?", :method => :delete
+));}</td>\n  </tr>\n", -1, false);end
+_hamlout.push_text("</table>\n<br>\n#{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_true_false_true_false(( link_to "New Player", new_player_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/haml-3.1.5/lib/haml/helpers/rails_323_textarea_fix.rb:26:in `render_template_with_haml'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/haml-3.1.5/lib/haml/helpers/rails_323_textarea_fix.rb:14:in `render_to_body_with_haml'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__427049124__process_action__19368154__callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__292156990__call__816998877__callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered players/index.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (C:/Sites/RailsPatton/app/views/players/index.html.haml:24: syntax error, unexpected '.'
+..._false_true_false_true_false((.#{player.hits*1000/player.atb...
+...                               ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:26: unknown regexp options - td
+C:/Sites/RailsPatton/app/views/players/index.html.haml:26: syntax error, unexpected $undefined
+));}</td>\n    <td>#{_hamlout.adjust_ta...
+          ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:27: syntax error, unexpected ')'
+));}</td>\n    <td>#{_hamlout....
+ ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:28: unknown regexp options - td
+C:/Sites/RailsPatton/app/views/players/index.html.haml:28: syntax error, unexpected $undefined
+));}</td>\n    <td>#{_hamlout.adjust_ta...
+          ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:29: syntax error, unexpected ')'
+));}</td>\n    <td>#{_hamlout....
+ ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:30: unknown regexp options - td
+C:/Sites/RailsPatton/app/views/players/index.html.haml:30: syntax error, unexpected $undefined
+));}</td>\n  </tr>\n", -1, false);end
+          ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:31: unknown regexp options - tabl
+unmatched close parenthesis: /tr>\n", -1, false);end
+_hamlout.push_text("</
+C:/Sites/RailsPatton/app/views/players/index.html.haml:31: syntax error, unexpected $undefined
+_hamlout.push_text("</table>\n<br>\n#{_hamlout.adjust_tabs...
+                             ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:31: syntax error, unexpected $undefined
+...lout.push_text("</table>\n<br>\n#{_hamlout.adjust_tabs(-1); ...
+...                               ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:32: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+C:/Sites/RailsPatton/app/views/players/index.html.haml:35: syntax error, unexpected $end, expecting keyword_end):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= .#{player.hits*1000/player.atbats}
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  actionpack (3.2.3) lib/action_view/template.rb:285:in `module_eval'
+  actionpack (3.2.3) lib/action_view/template.rb:285:in `compile'
+  actionpack (3.2.3) lib/action_view/template.rb:233:in `compile!'
+  actionpack (3.2.3) lib/action_view/template.rb:142:in `block in render'
+  activesupport (3.2.3) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.3) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.3) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.3) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.3) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  haml (3.1.5) lib/haml/helpers/rails_323_textarea_fix.rb:26:in `render_template_with_haml'
+  actionpack (3.2.3) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.3) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  haml (3.1.5) lib/haml/helpers/rails_323_textarea_fix.rb:14:in `render_to_body_with_haml'
+  actionpack (3.2.3) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.3) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.3) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.3) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.3) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.3) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.3) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:414:in `_run__427049124__process_action__19368154__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.3) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.3) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__292156990__call__816998877__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:38:52 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:38:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:38:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:39:16 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+ERROR: compiling _app_views_players_index_html_haml___587252942_34141740 RAISED C:/Sites/RailsPatton/app/views/players/index.html.haml:24: syntax error, unexpected tINTEGER, expecting '}'
+...e_false((".#{player.hits'*'1000/player.atbats}"
+...                               ^
+Function body:           def _app_views_players_index_html_haml___587252942_34141740(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "players/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Players</h1>\n#{
+
+_hamlout.format_script_false_false_false_true_false_true_false(("Player Count: #{Player.count}"
+));}\n<table>\n  <tr>\n    <th>#{_hamlout.adjust_tabs(3); 
+
+_hamlout.format_script_false_true_false_true_false_true_false(("FName  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("LName  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("Team   "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("League  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("At Bats"
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("   Hits"
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("BA	"
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("Runs  "
+));}</th>\n    <th>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false(("RBI  "
+));}</th>\n  </tr>\n", -1, false);
+	@players.each do |player|
+_hamlout.push_text("  <tr>\n    <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((player.fname
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.lname
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.team
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.league
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.atbats
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.hits
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((".#{player.hits'*'1000/player.atbats}"
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.runs
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((player.rbi
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Show', player_path(player)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Edit', edit_player_path(player)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Destroy", player, :confirm => "Are you sure?", :method => :delete
+));}</td>\n  </tr>\n", -1, false);end
+_hamlout.push_text("</table>\n<br>\n#{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_true_false_true_false(( link_to "New Player", new_player_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `module_eval'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:285:in `compile'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:233:in `compile!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:142:in `block in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:125:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/template.rb:141:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/template_renderer.rb:18:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/haml-3.1.5/lib/haml/helpers/rails_323_textarea_fix.rb:26:in `render_template_with_haml'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_view/renderer/renderer.rb:17:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:110:in `_render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/haml-3.1.5/lib/haml/helpers/rails_323_textarea_fix.rb:14:in `render_to_body_with_haml'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:88:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:167:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:414:in `_run__427049124__process_action__19368154__callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/notifications.rb:123:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/base.rb:121:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/abstract_controller/rendering.rb:45:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:203:in `dispatch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_controller/metal.rb:246:in `block in action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:36:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/flash.rb:242:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/query_cache.rb:64:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__292156990__call__816998877__callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered players/index.html.haml within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (C:/Sites/RailsPatton/app/views/players/index.html.haml:24: syntax error, unexpected tINTEGER, expecting '}'
+...e_false((".#{player.hits'*'1000/player.atbats}"
+...                               ^):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.hits'*'1000/player.atbats}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  actionpack (3.2.3) lib/action_view/template.rb:285:in `module_eval'
+  actionpack (3.2.3) lib/action_view/template.rb:285:in `compile'
+  actionpack (3.2.3) lib/action_view/template.rb:233:in `compile!'
+  actionpack (3.2.3) lib/action_view/template.rb:142:in `block in render'
+  activesupport (3.2.3) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.3) lib/action_view/template.rb:141:in `render'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.3) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.3) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.3) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.3) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  haml (3.1.5) lib/haml/helpers/rails_323_textarea_fix.rb:26:in `render_template_with_haml'
+  actionpack (3.2.3) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.3) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  haml (3.1.5) lib/haml/helpers/rails_323_textarea_fix.rb:14:in `render_to_body_with_haml'
+  actionpack (3.2.3) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.3) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.3) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.3) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.3) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.3) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.3) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:414:in `_run__427049124__process_action__19368154__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.3) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.3) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.3) lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+  activerecord (3.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.3) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.3) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__292156990__call__816998877__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:40:00 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (wrong number of arguments(1 for 0)):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.hits.times(1000)/player.atbats}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/views/players/index.html.haml:24:in `times'
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_31688868'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_31688868'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:40:40 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:40:40 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:40:40 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/4/edit" for 127.0.0.1 at 2012-05-13 15:40:45 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (18.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:40:45 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:40:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/4" for 127.0.0.1 at 2012-05-13 15:40:51 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Babe", "lname"=>"Tooth", "team"=>"NYY", "league"=>"AL", "atbats"=>"234", "hits"=>"40", "runs"=>"12", "rbi"=>"14"}, "commit"=>"Update Player", "id"=>"4"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "hits" = 40, "updated_at" = '2012-05-13 19:40:51.561862' WHERE "players"."id" = 4[0m
+  [1m[35m (71.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/4
+Completed 302 Found in 79ms (ActiveRecord: 71.0ms)
+
+
+Started GET "/players/4" for 127.0.0.1 at 2012-05-13 15:40:51 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:40:51 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:40:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:40:53 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:40:54 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:40:54 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/4/edit" for 127.0.0.1 at 2012-05-13 15:41:00 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (16.0ms)
+  Rendered players/edit.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/4" for 127.0.0.1 at 2012-05-13 15:41:06 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Babe", "lname"=>"Tooth", "team"=>"NYY", "league"=>"AL", "atbats"=>"234", "hits"=>"60", "runs"=>"12", "rbi"=>"14"}, "commit"=>"Update Player", "id"=>"4"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "hits" = 60, "updated_at" = '2012-05-13 19:41:06.072862' WHERE "players"."id" = 4[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/4
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/players/4" for 127.0.0.1 at 2012-05-13 15:41:06 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:41:07 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/6/edit" for 127.0.0.1 at 2012-05-13 15:41:24 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "6"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:24 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/6" for 127.0.0.1 at 2012-05-13 15:41:28 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Mel", "lname"=>"Ott", "team"=>"NYG", "league"=>"NL", "atbats"=>"128", "hits"=>"0", "runs"=>"", "rbi"=>""}, "commit"=>"Update Player", "id"=>"6"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "hits" = 0, "updated_at" = '2012-05-13 19:41:28.800862' WHERE "players"."id" = 6[0m
+  [1m[35m (17.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/6
+Completed 302 Found in 21ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-13 15:41:28 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:28 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:29 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:41:32 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:32 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:32 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/6/edit" for 127.0.0.1 at 2012-05-13 15:41:41 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "6"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (8.0ms)
+  Rendered players/edit.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:41 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:41 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/6" for 127.0.0.1 at 2012-05-13 15:41:48 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Mel", "lname"=>"Ott", "team"=>"NYG", "league"=>"NL", "atbats"=>"128", "hits"=>"40", "runs"=>"", "rbi"=>""}, "commit"=>"Update Player", "id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "hits" = 40, "updated_at" = '2012-05-13 19:41:48.703862' WHERE "players"."id" = 6[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/6
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-13 15:41:48 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:48 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 15:41:52 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 15:41:52 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 15:41:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 16:17:06 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined local variable or method `ba' for #<#<Class:0x36caa10>:0x36d0710>):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_28736340'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_28736340'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 16:17:33 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `ba' for #<Player:0x3a5e8c8>):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_30611340'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_30611340'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 16:17:36 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `ba' for #<Player:0x6dc8870>):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_30611340'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_30611340'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 16:20:21 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (32.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined local variable or method `players_controller' for #<#<Class:0x36caa10>:0x6ebe570>):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{players_controller::player.ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_58059888'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_58059888'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 16:21:52 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `player' for #<Player:0x36b2548>):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/models/player.rb:6:in `ba'
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_30433056'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_30433056'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 16:22:40 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 16ms (Views: 7.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 16:22:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 16:22:41 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 16:23:50 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 16:23:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 16:23:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/5/edit" for 127.0.0.1 at 2012-05-13 17:01:08 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "5"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (18.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:01:08 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:01:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/5" for 127.0.0.1 at 2012-05-13 17:01:14 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Mickey", "lname"=>"Mantle", "team"=>"NYY", "league"=>"", "atbats"=>"400", "hits"=>"125", "runs"=>"", "rbi"=>""}, "commit"=>"Update Player", "id"=>"5"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "league" = '', "hits" = 125, "updated_at" = '2012-05-13 21:01:14.516862' WHERE "players"."id" = 5[0m
+  [1m[35m (14.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/5
+Completed 302 Found in 21ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/players/5" for 127.0.0.1 at 2012-05-13 17:01:14 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:01:14 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:01:14 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 17:01:16 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:01:16 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:01:16 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/5/edit" for 127.0.0.1 at 2012-05-13 17:01:31 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "5"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (15.0ms)
+  Rendered players/edit.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:01:31 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:01:31 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/5" for 127.0.0.1 at 2012-05-13 17:01:36 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Mickey", "lname"=>"Mantle", "team"=>"NYY", "league"=>"", "atbats"=>"400", "hits"=>"115", "runs"=>"", "rbi"=>""}, "commit"=>"Update Player", "id"=>"5"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "hits" = 115, "updated_at" = '2012-05-13 21:01:36.327862' WHERE "players"."id" = 5[0m
+  [1m[35m (19.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/5
+Completed 302 Found in 23ms (ActiveRecord: 20.0ms)
+
+
+Started GET "/players/5" for 127.0.0.1 at 2012-05-13 17:01:36 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:01:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:01:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 17:01:38 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:01:38 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:01:38 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 17:44:15 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:44:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:44:15 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 17:46:23 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:46:23 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:46:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-13 17:46:27 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (29.0ms)
+  Rendered players/new.html.haml within layouts/application (32.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:46:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:46:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 17:46:29 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 17:46:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 17:46:30 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 20:25:13 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 20:25:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 20:25:13 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 20:25:56 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 20:25:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 20:25:56 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (3.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePlayers (1)
+Migrating to AddPlayers (2)
+Migrating to SetDefaultHitsOnPlayers (20120514033350)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (148.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "hits" TYPE integer[0m
+  [1m[35m (5.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "hits" SET DEFAULT 0
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "atbats" TYPE integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "atbats" SET DEFAULT 0
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "runs" TYPE integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "runs" SET DEFAULT 0
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "rbi" TYPE integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "rbi" SET DEFAULT 0
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120514033350')[0m
+  [1m[35m (62.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (2.0ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"players"'::regclass
+
+  [1m[36m (4.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'players'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:38:01 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:38:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:38:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-13 23:38:02 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (18.0ms)
+  Rendered players/new.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:38:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:38:03 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:43:39 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `at_bats' for #<Player:0x3871f80>):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/models/player.rb:7:in `ba'
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_30433056'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_30433056'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:44:34 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `at_bats' for #<Player:0x3a876c8>):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/models/player.rb:7:in `ba'
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_30433056'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_30433056'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:44:56 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 28ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:44:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:44:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:56:23 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 13.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:56:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:56:24 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-13 23:56:26 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (15.0ms)
+  Rendered players/new.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:56:26 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:56:26 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2012-05-13 23:56:52 -0400
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Honus", "lname"=>"Wagner", "team"=>"", "league"=>"", "atbats"=>"0", "hits"=>"0", "runs"=>"0", "rbi"=>"0"}, "commit"=>"Create Player"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 03:56:52 UTC +00:00], ["fname", "Honus"], ["hits", 0], ["league", ""], ["lname", "Wagner"], ["rbi", 0], ["runs", 0], ["team", ""], ["updated_at", Mon, 14 May 2012 03:56:52 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/7
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/players/7" for 127.0.0.1 at 2012-05-13 23:56:52 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "7"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:56:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:56:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/7/edit" for 127.0.0.1 at 2012-05-13 23:56:56 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "7"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (16.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:56:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:56:56 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/7" for 127.0.0.1 at 2012-05-13 23:57:28 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Honus", "lname"=>"Wagner", "team"=>"Det", "league"=>"AL", "atbats"=>"550", "hits"=>"210", "runs"=>"107", "rbi"=>"112"}, "commit"=>"Update Player", "id"=>"7"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mUPDATE "players" SET "team" = 'Det', "league" = 'AL', "atbats" = 550, "hits" = 210, "runs" = 107, "rbi" = 112, "updated_at" = '2012-05-14 03:57:28.880808' WHERE "players"."id" = 7[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/7
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/players/7" for 127.0.0.1 at 2012-05-13 23:57:28 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "7"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:57:28 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:57:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:57:31 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:57:31 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:57:31 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-13 23:57:38 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (35.0ms)
+  Rendered players/new.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:57:38 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:57:38 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2012-05-13 23:57:49 -0400
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Bob", "lname"=>"Loser", "team"=>"", "league"=>"", "atbats"=>"0", "hits"=>"0", "runs"=>"0", "rbi"=>"0"}, "commit"=>"Create Player"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 03:57:49 UTC +00:00], ["fname", "Bob"], ["hits", 0], ["league", ""], ["lname", "Loser"], ["rbi", 0], ["runs", 0], ["team", ""], ["updated_at", Mon, 14 May 2012 03:57:49 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/8
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/players/8" for 127.0.0.1 at 2012-05-13 23:57:49 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "8"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-13 23:57:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-13 23:57:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:57:51 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (divided by 0):
+    21: 			%td= player.league
+    22: 			%td= player.atbats
+    23: 			%td= player.hits
+    24: 			%td= ".#{player.ba}"
+    25: 			%td= player.runs
+    26: 			%td= player.rbi
+    27: 			%td= link_to 'Show', player_path(player)
+  app/models/player.rb:12:in `/'
+  app/models/player.rb:12:in `ba'
+  app/views/players/index.html.haml:24:in `block in _app_views_players_index_html_haml___587252942_30433056'
+  app/views/players/index.html.haml:16:in `each'
+  app/views/players/index.html.haml:16:in `_app_views_players_index_html_haml___587252942_30433056'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-13 23:59:43 -0400
+Processing by PlayersController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (C:/Sites/RailsPatton/app/models/player.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/players_controller.rb:5:in `index'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 00:00:05 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 00:00:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:00:06 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 00:02:37 -0400
+Processing by PlayersController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (C:/Sites/RailsPatton/app/models/player.rb:12: syntax error, unexpected '{', expecting keyword_end
+		self.atbats == 0 {@ba = 0} || {@ba = self.hits ...
+		                  ^
+C:/Sites/RailsPatton/app/models/player.rb:12: syntax error, unexpected '}', expecting keyword_end
+		self.atbats == 0 {@ba = 0} || {@ba = self.hits * 1000 /...
+		                          ^
+C:/Sites/RailsPatton/app/models/player.rb:12: syntax error, unexpected '}', expecting tASSOC
+...self.hits * 1000 / self.atbats}
+...                               ^):
+  app/controllers/players_controller.rb:5:in `index'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 00:03:43 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 18ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 00:03:43 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:03:44 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 00:04:34 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 00:04:34 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:04:34 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-14 00:04:36 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (15.0ms)
+  Rendered players/new.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 00:04:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:04:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 00:04:38 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 00:04:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:04:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/8" for 127.0.0.1 at 2012-05-14 00:04:42 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "8"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:04:42 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 00:04:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 00:04:45 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 00:04:45 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:04:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)

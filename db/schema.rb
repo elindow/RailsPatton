@@ -11,19 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 20120514033350) do
 
   create_table "players", :force => true do |t|
     t.string   "fname"
     t.string   "lname"
-    t.integer  "atbats"
-    t.integer  "hits"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "atbats",     :default => 0
+    t.integer  "hits",       :default => 0
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.string   "league"
     t.string   "team"
-    t.integer  "runs"
-    t.integer  "rbi"
+    t.integer  "runs",       :default => 0
+    t.integer  "rbi",        :default => 0
   end
 
 end
