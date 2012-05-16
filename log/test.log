@@ -3528,3 +3528,238 @@ Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
   [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", nil], ["created_at", Mon, 14 May 2012 03:46:00 UTC +00:00], ["fname", "Fname 4"], ["hits", nil], ["league", nil], ["lname", "Lname 4"], ["rbi", nil], ["runs", nil], ["team", nil], ["updated_at", Mon, 14 May 2012 03:46:00 UTC +00:00]]
   [1m[35m (2.0ms)[0m  COMMIT
   [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[36m (1.0ms)[0m  [1m[0m
+  [1m[35m (11.0ms)[0m  select current_database()
+  [1m[36m (110.1ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'rails-patton-test'[0m
+  [1m[35m (36.0ms)[0m  TRUNCATE TABLE RESTART IDENTITY CASCADE;
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[36m (1.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1mTRUNCATE TABLE RESTART IDENTITY CASCADE;[0m
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (1.0ms)[0m  [1m[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE RESTART IDENTITY CASCADE;
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1mTRUNCATE TABLE RESTART IDENTITY CASCADE;[0m
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  TRUNCATE TABLE RESTART IDENTITY CASCADE;
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1mTRUNCATE TABLE RESTART IDENTITY CASCADE;[0m
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  TRUNCATE TABLE RESTART IDENTITY CASCADE;
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1mTRUNCATE TABLE RESTART IDENTITY CASCADE;[0m
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  TRUNCATE TABLE RESTART IDENTITY CASCADE;
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1mTRUNCATE TABLE RESTART IDENTITY CASCADE;[0m
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[35m (0.0ms)[0m  
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[35m (0.0ms)[0m  TRUNCATE TABLE RESTART IDENTITY CASCADE;
+PG::Error: ERROR:  syntax error at or near "IDENTITY"
+LINE 1: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+                                ^
+: TRUNCATE TABLE  RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1m[0m
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "players" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (1.0ms)[0m  select current_database()
+  [1m[36m (18.0ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'rails-patton-test'[0m
+  [1m[35m (20.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  Rendered players/index.html.haml within layouts/application (0.0ms)
+Completed 200 OK in 326ms (Views: 234.2ms | ActiveRecord: 80.1ms)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (18.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#index as HTML
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (16.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (14.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (31.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (116.1ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Mon, 14 May 2012 20:00:55 UTC +00:00], ["fname", "Fname 0"], ["hits", 0], ["league", nil], ["lname", "Lname 0"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 20:00:55 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Processing by PlayersController#update as HTML
+  Parameters: {"player"=>{"lname"=>"updated"}, "id"=>"1"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  UPDATE "players" SET "lname" = 'updated', "updated_at" = '2012-05-14 20:00:55.394290' WHERE "players"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://test.host/players/1
+Completed 302 Found in 5ms (ActiveRecord: 3.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (22.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (18.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (27.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Mon, 14 May 2012 20:00:55 UTC +00:00], ["fname", "FName"], ["hits", 0], ["league", nil], ["lname", "LName"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 20:00:55 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (16.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 20:00:55 UTC +00:00], ["fname", "Fname 1"], ["hits", 0], ["league", nil], ["lname", "Lname 1"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 20:00:55 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  Rendered shared/_error_msg.html.haml (2.0ms)
+  Rendered players/_form.html.haml (1578.1ms)
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (22.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Mon, 14 May 2012 20:00:57 UTC +00:00], ["fname", "Fname 2"], ["hits", 0], ["league", nil], ["lname", "Lname 2"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 20:00:57 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (18.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 20:00:57 UTC +00:00], ["fname", "Fname 3"], ["hits", 0], ["league", nil], ["lname", "Lname 3"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 20:00:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (32.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 20:00:58 UTC +00:00], ["fname", "Fname 4"], ["hits", 0], ["league", nil], ["lname", "Lname 4"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 20:00:58 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "players" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  select current_database()
+  [1m[36m (3.0ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'rails-patton-test'[0m
+  [1m[35m (12.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  Rendered players/index.html.haml within layouts/application (0.0ms)
+Completed 200 OK in 264ms (Views: 204.1ms | ActiveRecord: 51.0ms)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (12.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#index as HTML
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (24.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (12.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (12.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (118.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Mon, 14 May 2012 21:02:31 UTC +00:00], ["fname", "Fname 0"], ["hits", 0], ["league", nil], ["lname", "Lname 0"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 21:02:31 UTC +00:00]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Processing by PlayersController#update as HTML
+  Parameters: {"player"=>{"lname"=>"updated"}, "id"=>"1"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  UPDATE "players" SET "lname" = 'updated', "updated_at" = '2012-05-14 21:02:31.989054' WHERE "players"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://test.host/players/1
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (22.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (28.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Mon, 14 May 2012 21:02:32 UTC +00:00], ["fname", "FName"], ["hits", 0], ["league", nil], ["lname", "LName"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 21:02:32 UTC +00:00]]
+  [1m[36m (12.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (22.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 21:02:32 UTC +00:00], ["fname", "Fname 1"], ["hits", 0], ["league", nil], ["lname", "Lname 1"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 21:02:32 UTC +00:00]]
+  [1m[35m (15.0ms)[0m  COMMIT
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (1315.6ms)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (15.6ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Mon, 14 May 2012 21:02:34 UTC +00:00], ["fname", "Fname 2"], ["hits", 0], ["league", nil], ["lname", "Lname 2"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 21:02:34 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (31.2ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 21:02:34 UTC +00:00], ["fname", "Fname 3"], ["hits", 0], ["league", nil], ["lname", "Lname 3"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 21:02:34 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (15.6ms)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (15.6ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 0], ["created_at", Mon, 14 May 2012 21:02:34 UTC +00:00], ["fname", "Fname 4"], ["hits", 0], ["league", nil], ["lname", "Lname 4"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 14 May 2012 21:02:34 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
