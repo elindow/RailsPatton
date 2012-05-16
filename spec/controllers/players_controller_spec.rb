@@ -17,12 +17,21 @@ describe PlayersController do
 		end
 	end
 	
-	describe "new player" do
+	describe "GET new" do
 		it "can be created with a name" do
-			Player.new({fname: "new", lname: "player"}).should be_valid
+			Player.new({fname: "new", lname: "player", atbats: 1, hits: 0, runs: 0, rbi: 0}).should be_valid
 		end
 		it "cannot be created without a name" do
 			Player.new.should_not be_valid
+		end
+	end
+	
+	describe "GET edit" do
+		before(:each) do
+			@player = Fabricate(:player)
+		end	
+		it "can find a plyeer to be edited" do
+			@player = Player.find(@player.id)
 		end
 	end
 
@@ -36,8 +45,25 @@ describe PlayersController do
 		end
 	end
 
-  
- 
+	describe "POST create" do
+		before(:each) do
+			@player = Fabricate(:player)
+		end
+	it "it creates a player" do
+			@player.save.should be_true
+		end
+	end
+		
+	describe "DELETE destroy" do
+		before(:each) do
+			@player = Fabricate(:player)
+		end
+		it "can delete a player" do 
+			@player.destroy
+			@player.should be_destroyed
+		end
+	end
+	
 	
 	
 end

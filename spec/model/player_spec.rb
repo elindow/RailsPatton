@@ -8,6 +8,10 @@ describe "A Player" do
 		before(:each) do
 			player.fname = "FName"
 			player.lname = "LName"
+			player.atbats = 1
+			player.hits = 0
+			player.runs = 0
+			player.rbi = 0
 		end
 		
 		it "is valid" do
@@ -15,8 +19,6 @@ describe "A Player" do
 		end
 		
 		it "can be persisted" do
-			player.fname = "FName"
-			player.lname = "LName"
 			player.save.should be_true
 			Player.count.should == 1
 		end
