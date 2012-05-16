@@ -2,7 +2,7 @@
 
 	#GET /players
 	def index
-		Player.order("lname")
+		#Player.order("lname")
 		@players = Player.all
 	end
 

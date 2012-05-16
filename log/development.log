@@ -11227,3 +11227,96 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 00:04:45 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/5/edit" for 127.0.0.1 at 2012-05-14 01:04:13 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (8.0ms)
+  Rendered players/edit.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 01:04:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 01:04:13 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/5" for 127.0.0.1 at 2012-05-14 01:04:25 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"Mickey", "lname"=>"Mantle", "team"=>"NYY", "league"=>"", "atbats"=>"400", "hits"=>"115", "runs"=>"9", "rbi"=>"5"}, "commit"=>"Update Player", "id"=>"5"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "5"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  UPDATE "players" SET "runs" = 9, "rbi" = 5, "updated_at" = '2012-05-14 05:04:25.534808' WHERE "players"."id" = 5
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/5
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/players/5" for 127.0.0.1 at 2012-05-14 01:04:25 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "5"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 01:04:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 01:04:25 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 01:04:27 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 01:04:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 01:04:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/3" for 127.0.0.1 at 2012-05-14 01:05:20 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 01:05:21 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 01:05:21 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-14 01:05:23 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-14 01:05:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 01:05:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
