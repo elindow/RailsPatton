@@ -1,5 +1,11 @@
 ﻿class PlayersController < ApplicationController
 
+before_filter :get_player, :only => [ :edit, :show, :update, :destroy ]
+	def get_player
+		@player = Player.find(params[:id])
+	end
+
+
 	#GET /players
 	def index
 		#Player.order("lname")
@@ -8,7 +14,7 @@
 
 	#GET /players/1
 	def show
-		@player = Player.find(params[:id])
+		#@player = Player.find(params[:id])
 	end
 
 	#GET /players/new
@@ -18,7 +24,7 @@
 	
 	#GET /players/edit/1
 	def edit
-		@player = Player.find(params[:id])
+		#@player = Player.find(params[:id])
 	end
 
 	#POST /players
@@ -33,7 +39,7 @@
 
 	#PUT players/1
 	def update
-		@player = Player.find(params[:id])
+		#@player = Player.find(params[:id])
 		if @player.update_attributes(params[:player])
 			redirect_to @player, notice: 'Player was successfully updated'
 		else
@@ -43,7 +49,7 @@
 
 	#DELETE players/1
 	def destroy
-		@player = Player.find(params[:id])
+		#@player = Player.find(params[:id])
 		@player.destroy
 		redirect_to players_url
 	end
