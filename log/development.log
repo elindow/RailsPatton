@@ -11320,3 +11320,108 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-14 01:05:23 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (2.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePlayers (1)
+Migrating to AddPlayers (2)
+Migrating to SetDefaultHitsOnPlayers (3)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (99.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "hits" TYPE integer[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "hits" SET DEFAULT 0
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "atbats" TYPE integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "atbats" SET DEFAULT 0
+  [1m[36m (11.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "runs" TYPE integer[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "runs" SET DEFAULT 0
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "players" ALTER COLUMN "rbi" TYPE integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "players" ALTER COLUMN "rbi" SET DEFAULT 0
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('3')[0m
+  [1m[35m (60.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (2.0ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"players"'::regclass
+
+  [1m[36m (4.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'players'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (5000.0ms)[0m  DROP DATABASE IF EXISTS "rails-patton-test"
+PG::Error: ERROR:  database "rails-patton-test" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "rails-patton-test"
+
+
+Started GET "/players/5" for 127.0.0.1 at 2012-05-16 22:19:05 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "5"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 3.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-16 22:19:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-16 22:19:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-16 22:19:07 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-16 22:19:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-16 22:19:07 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (5000.0ms)[0m  DROP DATABASE IF EXISTS "rails-patton-test"
+PG::Error: ERROR:  database "rails-patton-test" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "rails-patton-test"
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (426.0ms)[0m  DROP DATABASE IF EXISTS "rails-patton-test"
+  [1m[36m (15353.0ms)[0m  [1mCREATE DATABASE "rails-patton-test" ENCODING = 'utf8'[0m
+  [1m[35m (209.0ms)[0m  CREATE TABLE "players" ("id" serial primary key, "fname" character varying(255), "lname" character varying(255), "atbats" integer DEFAULT 0, "hits" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "league" character varying(255), "team" character varying(255), "runs" integer DEFAULT 0, "rbi" integer DEFAULT 0) 
+  [1m[36m (18.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (39.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (5.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120514033350')[0m
+  [1m[35m (8.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (8.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [1m[35m (8.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('3')

@@ -48,4 +48,5 @@ group :test do
 	gem "faker"					#creates fake names, email addresses, etc.
 	gem "capybara"        #integration test
 	gem "spork"
+	gem "selenium-webdriver"
 end

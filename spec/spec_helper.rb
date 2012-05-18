@@ -1,13 +1,16 @@
 require 'rubygems'
-require 'spork'
+#require 'spork'
 
-Spork.prefork do
+#Spork.prefork do
 
 	ENV["RAILS_ENV"] ||= 'test'
 
 	require "rails/application"
 	require File.expand_path("../../config/environment", __FILE__)
 	require 'rspec/rails'
+	
+	require 'capybara/rspec'
+	require 'capybara/rails'
 
 	RSpec.configure do |config|
 		config.mock_with :rspec
@@ -22,8 +25,9 @@ Spork.prefork do
 			require file
 		end
 	end
-end
+#end
 
+=begin
 Spork.each_run do
 	[ "support/config/*.rb", "support/*.rb" ].each do |path|
 		Dir["#{File.dirname(__FILE__)}/#{path}"].each do |file|
@@ -31,5 +35,5 @@ Spork.each_run do
 		end
 	end
 end
-
+=end
 
