@@ -31,7 +31,7 @@ before_filter :get_player, :only => [ :edit, :show, :update, :destroy ]
 	def create
 		@player = Player.new(params[:player])
 		if @player.save
-			redirect_to @player, notice: 'Player was successfully created'
+			redirect_to @player, notice: "Player was successfully created"
 		else
 			render action: "new"
 		end
@@ -41,7 +41,7 @@ before_filter :get_player, :only => [ :edit, :show, :update, :destroy ]
 	def update
 		#@player = Player.find(params[:id])
 		if @player.update_attributes(params[:player])
-			redirect_to @player, notice: 'Player was successfully updated'
+			redirect_to @player, notice: "Player was successfully updated"
 		else
 			render action "edit"
 		end

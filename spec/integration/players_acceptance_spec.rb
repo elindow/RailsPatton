@@ -50,6 +50,14 @@ feature "Players", :js => true do
 		alert.getText()
 		alert.accept
 	
+=======
+	
+	scenario "can be destroyed" do
+		player = Fabricate(:player)
+		visit "/players"	
+		page.driver.browser.switch_to.alert.accept
+		#page.evaluate_script('window.confirm = function() { return true; )')
+		click_link "Destroy"	
 
 		Player.count.should == 1
 	end
