@@ -21,6 +21,7 @@ module RailsPatton
 	class Application < Rails::Application
 		# Configure the default encoding used in templates for Ruby 1.9.
 		config.encoding = "utf-8"
+		config.active_support.deprecation = :log
 		# Enable the asset pipeline
 		config.assets.enabled = true
 	end
