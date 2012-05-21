@@ -39,6 +39,7 @@ feature "Players", :js => true do
 		player.reload.fname.should == 'edited fname'
 	end
 
+=begin
 	scenario "can be destroyed"  do
 		player = Fabricate(:player)
 		visit "/players"	
@@ -49,16 +50,15 @@ feature "Players", :js => true do
 		alert = page.driver.switchTo().alert()
 		alert.getText()
 		alert.accept
-	
-=======
-	
+	end
+=end
+
 	scenario "can be destroyed" do
 		player = Fabricate(:player)
 		visit "/players"	
-		page.driver.browser.switch_to.alert.accept
-		#page.evaluate_script('window.confirm = function() { return true; )')
+		page.evaluate_script('window.confirm = function() { return true; )')
 		click_link "Destroy"	
 
-		Player.count.should == 1
+		Player.count.should == 0		#doesn't work on my systems - javascript settings?
 	end
 end

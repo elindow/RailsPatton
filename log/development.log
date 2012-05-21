@@ -11539,3 +11539,1318 @@ Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:33:41 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-18 18:41:36 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (9.0ms)
+  Rendered players/new.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:41:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:41:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2012-05-18 18:41:49 -0400
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"delete me", "lname"=>"please", "team"=>"", "league"=>"", "atbats"=>"0", "hits"=>"0", "runs"=>"0", "rbi"=>"0"}, "commit"=>"Create Player"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Fri, 18 May 2012 22:41:49 UTC +00:00], ["fname", "delete me"], ["hits", 0], ["league", ""], ["lname", "please"], ["rbi", 0], ["runs", 0], ["team", ""], ["updated_at", Fri, 18 May 2012 22:41:49 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/9
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/players/9" for 127.0.0.1 at 2012-05-18 18:41:49 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "9"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:41:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:41:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/9/edit" for 127.0.0.1 at 2012-05-18 18:41:52 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:41:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:41:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/9" for 127.0.0.1 at 2012-05-18 18:41:56 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"delete me", "lname"=>"please", "team"=>"", "league"=>"", "atbats"=>"0", "hits"=>"0", "runs"=>"0", "rbi"=>"0"}, "commit"=>"Update Player", "id"=>"9"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "9"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/9
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/players/9" for 127.0.0.1 at 2012-05-18 18:41:56 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:41:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:41:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/9/edit" for 127.0.0.1 at 2012-05-18 18:41:59 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "9"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:41:59 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:41:59 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/9" for 127.0.0.1 at 2012-05-18 18:42:07 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/m7+MydfvLT2jo2Q8xd9wnykky31LSGtksA9Gj8KnBg=", "player"=>{"fname"=>"delete me", "lname"=>"please", "team"=>"cls", "league"=>"al", "atbats"=>"0", "hits"=>"0", "runs"=>"0", "rbi"=>"0"}, "commit"=>"Update Player", "id"=>"9"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mUPDATE "players" SET "team" = 'cls', "league" = 'al', "updated_at" = '2012-05-18 22:42:07.725131' WHERE "players"."id" = 9[0m
+  [1m[35m (70.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/9
+Completed 302 Found in 75ms (ActiveRecord: 72.0ms)
+
+
+Started GET "/players/9" for 127.0.0.1 at 2012-05-18 18:42:07 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "9"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:42:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:42:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 18:42:11 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:42:11 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:42:11 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/players/9" for 127.0.0.1 at 2012-05-18 18:42:15 -0400
+Processing by PlayersController#destroy as HTML
+  Parameters: {"id"=>"9"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "9"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "players" WHERE "players"."id" = $1  [["id", 9]]
+  [1m[36m (39.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players
+Completed 302 Found in 44ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 18:42:15 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:42:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:42:16 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/3" for 127.0.0.1 at 2012-05-18 18:43:00 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (40.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered players/show.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 219ms (Views: 59.0ms | ActiveRecord: 67.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:02 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:02 -0400
+Compiled jquery.js  (1ms)  (pid 6876)
+Compiled jquery_ujs.js  (0ms)  (pid 6876)
+Compiled application.js  (39ms)  (pid 6876)
+Served asset /application.js - 304 Not Modified (63ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 18:43:04 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/3/edit" for 127.0.0.1 at 2012-05-18 18:43:07 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered shared/_error_msg.html.haml (1.0ms)
+  Rendered players/_form.html.haml (284.0ms)
+  Rendered players/edit.html.haml within layouts/application (475.0ms)
+Completed 200 OK in 483ms (Views: 481.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:07 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/3" for 127.0.0.1 at 2012-05-18 18:43:09 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nbETNqn0maGjFBjgyLazj1huvFUAu3B+BGGfYV17Z+Q=", "player"=>{"fname"=>"Babe", "lname"=>"Ruth", "team"=>"NYY", "league"=>"AL", "atbats"=>"650", "hits"=>"222", "runs"=>"100", "rbi"=>"120"}, "commit"=>"Update Player", "id"=>"3"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/3
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/players/3" for 127.0.0.1 at 2012-05-18 18:43:09 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:09 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:10 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 18:43:11 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:12 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-18 18:43:15 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/new.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:15 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2012-05-18 18:43:27 -0400
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nbETNqn0maGjFBjgyLazj1huvFUAu3B+BGGfYV17Z+Q=", "player"=>{"fname"=>"delete me", "lname"=>"please", "team"=>"", "league"=>"", "atbats"=>"0", "hits"=>"0", "runs"=>"0", "rbi"=>"0"}, "commit"=>"Create Player"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (32.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Fri, 18 May 2012 22:43:27 UTC +00:00], ["fname", "delete me"], ["hits", 0], ["league", ""], ["lname", "please"], ["rbi", 0], ["runs", 0], ["team", ""], ["updated_at", Fri, 18 May 2012 22:43:27 UTC +00:00]]
+  [1m[36m (21.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/10
+Completed 302 Found in 55ms (ActiveRecord: 53.0ms)
+
+
+Started GET "/players/10" for 127.0.0.1 at 2012-05-18 18:43:27 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "10"]]
+  Rendered players/show.html.haml within layouts/application (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 18:43:29 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:30 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/players/10" for 127.0.0.1 at 2012-05-18 18:43:35 -0400
+Processing by PlayersController#destroy as HTML
+  Parameters: {"id"=>"10"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 10]]
+  [1m[35m (20.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players
+Completed 302 Found in 25ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 18:43:35 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 18:43:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 18:43:36 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/3" for 127.0.0.1 at 2012-05-18 23:43:43 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:43:43 -0400
+Compiled application.css  (1504ms)  (pid 6876)
+Served asset /application.css - 304 Not Modified (1571ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:43:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 23:43:48 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:43:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:43:48 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-18 23:43:52 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (18.0ms)
+  Rendered players/new.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:43:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:43:53 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 23:43:57 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:43:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:43:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/3/edit" for 127.0.0.1 at 2012-05-18 23:43:59 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/edit.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:43:59 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:44:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/3" for 127.0.0.1 at 2012-05-18 23:44:03 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DTh77qBbSxdLhgh4F9dJK1r19KVr0ig20HS5uRWJ8JY=", "player"=>{"fname"=>"Babe", "lname"=>"Ruth", "team"=>"NYY", "league"=>"AL", "atbats"=>"650", "hits"=>"223", "runs"=>"100", "rbi"=>"120"}, "commit"=>"Update Player", "id"=>"3"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "hits" = 223, "updated_at" = '2012-05-19 03:44:03.848131' WHERE "players"."id" = 3[0m
+  [1m[35m (17.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/3
+Completed 302 Found in 22ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/players/3" for 127.0.0.1 at 2012-05-18 23:44:03 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:44:03 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:44:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 23:44:08 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:44:08 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:44:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 23:45:35 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:45:35 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:45:35 -0400
+Compiled application.css  (8ms)  (pid 6876)
+Served asset /application.css - 200 OK (20ms)
+
+
+Started GET "/players/4/edit" for 127.0.0.1 at 2012-05-18 23:45:39 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/edit.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:45:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:45:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 23:45:42 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:45:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:45:42 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 23:45:57 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:45:57 -0400
+Compiled application.css  (19ms)  (pid 6876)
+Served asset /application.css - 200 OK (35ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:45:58 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-18 23:50:04 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-18 23:50:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-18 23:50:04 -0400
+Compiled application.css  (8ms)  (pid 6876)
+Served asset /application.css - 200 OK (21ms)
+
+
+Started GET "/players/4/edit" for 127.0.0.1 at 2012-05-19 00:03:34 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (8.0ms)
+  Rendered players/edit.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 22ms (Views: 13.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:03:34 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:03:34 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/players/4" for 127.0.0.1 at 2012-05-19 00:03:38 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DTh77qBbSxdLhgh4F9dJK1r19KVr0ig20HS5uRWJ8JY=", "player"=>{"fname"=>"Babe", "lname"=>"Tooth", "team"=>"NYY", "league"=>"AL", "atbats"=>"234", "hits"=>"61", "runs"=>"12", "rbi"=>"14"}, "commit"=>"Update Player", "id"=>"4"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  UPDATE "players" SET "hits" = 61, "updated_at" = '2012-05-19 04:03:38.375131' WHERE "players"."id" = 4
+  [1m[36m (68.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/4
+Completed 302 Found in 97ms (ActiveRecord: 70.0ms)
+
+
+Started GET "/players/4" for 127.0.0.1 at 2012-05-19 00:03:38 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:03:38 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:03:38 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/players/4/edit" for 127.0.0.1 at 2012-05-19 00:03:47 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:03:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:03:47 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/players/4" for 127.0.0.1 at 2012-05-19 00:03:54 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DTh77qBbSxdLhgh4F9dJK1r19KVr0ig20HS5uRWJ8JY=", "player"=>{"fname"=>"Babe", "lname"=>"Tooth", "team"=>"NYY", "league"=>"AL", "atbats"=>"234", "hits"=>"62", "runs"=>"12", "rbi"=>"14"}, "commit"=>"Update Player", "id"=>"4"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  UPDATE "players" SET "hits" = 62, "updated_at" = '2012-05-19 04:03:54.716131' WHERE "players"."id" = 4
+  [1m[36m (17.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/4
+Completed 302 Found in 21ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/players/4" for 127.0.0.1 at 2012-05-19 00:03:54 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:03:54 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:03:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/4/edit" for 127.0.0.1 at 2012-05-19 00:06:23 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (20.0ms)
+  Rendered players/edit.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 34ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:06:23 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:06:23 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/players/4" for 127.0.0.1 at 2012-05-19 00:06:27 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DTh77qBbSxdLhgh4F9dJK1r19KVr0ig20HS5uRWJ8JY=", "player"=>{"fname"=>"Babe", "lname"=>"Tooth", "team"=>"NYY", "league"=>"AL", "atbats"=>"234", "hits"=>"61", "runs"=>"12", "rbi"=>"14"}, "commit"=>"Update Player", "id"=>"4"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  UPDATE "players" SET "hits" = 61, "updated_at" = '2012-05-19 04:06:27.288131' WHERE "players"."id" = 4
+  [1m[36m (13.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/4
+Completed 302 Found in 20ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/players/4" for 127.0.0.1 at 2012-05-19 00:06:27 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:06:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:06:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-19 00:17:00 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Invalid tag: "%= flash[:notice]".):
+    6: 		= stylesheet_link_tag "application"
+    7: 		= javascript_include_tag "application"
+    8: 		
+    9: 	%= flash[:notice]
+    10: 	%body
+    11: 		= yield
+  app/views/layouts/application.html.haml:9
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-19 00:18:02 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Invalid tag: "%= flash[:notice]".):
+    7: 		= javascript_include_tag "application"
+    8: 		= javascript_include_tag :defaults
+    9: 		
+    10: 	%= flash[:notice]
+    11: 	%body
+    12: 		= yield
+  app/views/layouts/application.html.haml:10
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-19 00:18:27 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:18:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 00:18:27 -0400
+Served asset /defaults.js - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:18:27 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/players/6/edit" for 127.0.0.1 at 2012-05-19 00:18:31 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (9.0ms)
+  Rendered players/edit.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:18:31 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:18:32 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 00:18:32 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-19 00:18:46 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:18:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:18:46 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 00:18:47 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players/6/edit" for 127.0.0.1 at 2012-05-19 00:18:52 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "6"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (17.0ms)
+  Rendered players/edit.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:18:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:18:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 00:18:53 -0400
+Served asset /defaults.js - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started PUT "/players/6" for 127.0.0.1 at 2012-05-19 00:19:04 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DTh77qBbSxdLhgh4F9dJK1r19KVr0ig20HS5uRWJ8JY=", "player"=>{"fname"=>"Mel", "lname"=>"Ott", "team"=>"NYG", "league"=>"NL", "atbats"=>"128", "hits"=>"40", "runs"=>"3", "rbi"=>"2"}, "commit"=>"Update Player", "id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mUPDATE "players" SET "runs" = 3, "rbi" = 2, "updated_at" = '2012-05-19 04:19:04.170131' WHERE "players"."id" = 6[0m
+  [1m[35m (15.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/6
+Completed 302 Found in 20ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-19 00:19:04 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 00:19:04 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 00:19:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 00:19:04 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-19 17:15:15 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 17:15:15 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 17:15:15 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 17:15:15 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-19 17:15:31 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Unbalanced brackets.):
+    1: ﻿%h1 #{@player.fname} #{@player.lname}
+    2: %h2 #{@player.league):#{@player.team)
+    3: 
+    4: %ul
+    5: 	%li= "FName: #{@player.fname}"
+  app/views/players/show.html.haml:2
+
+
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-19 17:16:05 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `tea' for #<Player:0x4150ec0>):
+    1: ﻿%h1 #{@player.fname} #{@player.lname}
+    2: %h2 #{@player.league}:#{@player.tea}
+    3: 
+    4: %ul
+    5: 	%li= "FName: #{@player.fname}"
+  app/views/players/show.html.haml:2:in `_app_views_players_show_html_haml___743908300_34250064'
+
+
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-19 17:16:22 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `tea' for #<Player:0x4529c28>):
+    1: ﻿%h1 #{@player.fname} #{@player.lname}
+    2: %h2 #{@player.league} #{@player.tea}
+    3: 
+    4: %ul
+    5: 	%li= "FName: #{@player.fname}"
+  app/views/players/show.html.haml:2:in `_app_views_players_show_html_haml___743908300_36290532'
+
+
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-19 17:16:52 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 17:16:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 17:16:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 17:16:52 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players/6" for 127.0.0.1 at 2012-05-19 17:17:06 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  Rendered players/show.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-19 17:17:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-19 17:17:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-19 17:17:06 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-21 11:24:57 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-21 11:24:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-21 11:24:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-21 11:24:57 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players/7/edit" for 127.0.0.1 at 2012-05-21 11:25:14 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "7"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (14.0ms)
+  Rendered players/edit.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-21 11:25:14 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-21 11:25:15 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-21 11:25:15 -0400
+Served asset /defaults.js - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-21 11:32:52 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  Rendered players/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-21 11:32:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-21 11:32:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-21 11:32:52 -0400
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-21 11:32:55 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (29.0ms)
+  Rendered players/new.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-21 11:32:55 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-21 11:32:55 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2012-05-21 11:32:56 -0400
+Served asset /defaults.js - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+

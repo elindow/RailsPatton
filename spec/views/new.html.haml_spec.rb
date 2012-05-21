@@ -9,5 +9,6 @@ describe "players/new.html.haml" do
   it "renders new player form" do
     render
 	assert_select "form"
+	assert_select "input"
   end
 end
