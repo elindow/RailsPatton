@@ -2,7 +2,12 @@
 
 before_filter :get_player, :only => [ :edit, :show, :update, :destroy ]
 	def get_player
-		@player = Player.find(params[:id])
+		begin
+			@player = Player.find(params[:id]) 
+		rescue
+			#puts "Player not found!"
+			not_found
+		end
 	end
 
 

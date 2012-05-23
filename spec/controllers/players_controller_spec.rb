@@ -64,6 +64,15 @@ describe PlayersController do
 		end
 	end
 	
+	describe "player doesn't exist" do
+		before do
+			get :show, :player => 'none'
+		end
+			it { should_not assign_to :player }
+			it { should_not render_template :show }
+			it { should respond_with :not_found }
+			it { should respond_with_content_type :html }
+		end
 	
 	
 end

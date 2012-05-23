@@ -9,5 +9,6 @@ describe "players/show.html.haml" do
 		render
 		assert_select "li", 8
 	end
+
 end
 	

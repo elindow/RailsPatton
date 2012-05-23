@@ -8,7 +8,8 @@ describe "players/new.html.haml" do
 
   it "renders new player form" do
     render
-	assert_select "form"
-	assert_select "input"
+	assert_select "form", action: player_path(:player), method: "post" do
+		assert_select "input#player_fname", :name => "player[fname]"	
+	end
   end
 end
