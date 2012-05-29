@@ -36,6 +36,11 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :development do
+	gem "rspec-rails"
+	gem 'hirb'
+end
+
 group :test do
 	gem "rspec"
 	gem "rspec-rails"
@@ -49,4 +54,5 @@ group :test do
 	gem "capybara"        #integration test
 	gem "spork"
 	gem "selenium-webdriver"
+	gem 'hirb'
 end

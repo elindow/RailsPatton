@@ -1,5 +1,11 @@
 RailsPatton::Application.routes.draw do
+  #get "hitter/new"
+  #get "hitter/edit"
+  #get "hitter/show"
+  #get "hitter/
+
 	resources :players
+	resources :hitters
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

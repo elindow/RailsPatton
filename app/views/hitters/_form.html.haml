@@ -1,0 +1,13 @@
+﻿=simple_form_for @hitter do |f|
+	= render 'shared/error_msg', model: @hitter
+	= f.input :h
+	= f.input :ab
+	= f.input :dbl
+	= f.input :trp
+	= f.input :hr
+	= f.input :r
+	= f.input :rbi
+	= f.input :sb
+	= f.input :cs	
+	
+	= f.button :submit

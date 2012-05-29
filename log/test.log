@@ -17207,3 +17207,275 @@ Completed 404 Not Found in 2ms (Views: 0.0ms | ActiveRecord: 1.0ms)
   [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 12], ["created_at", Wed, 23 May 2012 04:19:16 UTC +00:00], ["fname", "Fname 11"], ["hits", 11], ["league", nil], ["lname", "Lname 11"], ["rbi", 11], ["runs", 11], ["team", nil], ["updated_at", Wed, 23 May 2012 04:19:16 UTC +00:00]]
   [1m[35m (14.0ms)[0m  COMMIT
   [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[36m (25.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (5.0ms)[0m  select current_database()
+  [1m[36m (29.0ms)[0m  [1mselect table_name from information_schema.views where table_schema = 'rails-patton-test'[0m
+  [1m[35m (82.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  Rendered players/index.html.haml within layouts/application (0.0ms)
+Completed 200 OK in 200ms (Views: 69.0ms | ActiveRecord: 127.0ms)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (5.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#index as HTML
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (9.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (4.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (5.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (22.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 1], ["created_at", Mon, 28 May 2012 00:25:11 UTC +00:00], ["fname", "Fname 0"], ["hits", 0], ["league", nil], ["lname", "Lname 0"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:11 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (8.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 2], ["created_at", Mon, 28 May 2012 00:25:11 UTC +00:00], ["fname", "Fname 1"], ["hits", 1], ["league", nil], ["lname", "Lname 1"], ["rbi", 1], ["runs", 1], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:11 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Processing by PlayersController#update as HTML
+  Parameters: {"player"=>{"lname"=>"updated"}, "id"=>"1"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "lname" = 'updated', "updated_at" = '2012-05-28 00:25:11.959394' WHERE "players"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://test.host/players/1
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (10.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 3], ["created_at", Mon, 28 May 2012 00:25:11 UTC +00:00], ["fname", "Fname 2"], ["hits", 2], ["league", nil], ["lname", "Lname 2"], ["rbi", 2], ["runs", 2], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:11 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (16.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 4], ["created_at", Mon, 28 May 2012 00:25:12 UTC +00:00], ["fname", "Fname 3"], ["hits", 3], ["league", nil], ["lname", "Lname 3"], ["rbi", 3], ["runs", 3], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:12 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#show as HTML
+  Parameters: {"player"=>"none"}
+Filter chain halted as :get_player rendered or redirected
+Completed 404 Not Found in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (23.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+Processing by PlayersController#show as HTML
+  Parameters: {"player"=>"none"}
+Filter chain halted as :get_player rendered or redirected
+Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+Processing by PlayersController#show as HTML
+  Parameters: {"player"=>"none"}
+Filter chain halted as :get_player rendered or redirected
+Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (5.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+Processing by PlayersController#show as HTML
+  Parameters: {"player"=>"none"}
+Filter chain halted as :get_player rendered or redirected
+Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (5.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 5], ["created_at", Mon, 28 May 2012 00:25:12 UTC +00:00], ["fname", "Fname 4"], ["hits", 4], ["league", nil], ["lname", "Lname 4"], ["rbi", 4], ["runs", 4], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:12 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  COMMIT
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-27 20:25:21 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-05-27 20:25:21 -0400
+Served asset /application.css - 200 OK (27ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-05-27 20:25:21 -0400
+Served asset /application.js - 200 OK (36ms)
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (44.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 6], ["created_at", Mon, 28 May 2012 00:25:22 UTC +00:00], ["fname", "Fname 5"], ["hits", 5], ["league", nil], ["lname", "Lname 5"], ["rbi", 5], ["runs", 5], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:22 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  COMMIT
+
+
+Started GET "/players/1" for 127.0.0.1 at 2012-05-27 20:25:22 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (2.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 2.0ms)
+  [1m[35m (1.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (13.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+
+
+Started GET "/players/new" for 127.0.0.1 at 2012-05-27 20:25:22 -0400
+Processing by PlayersController#new as HTML
+  Rendered shared/_error_msg.html.haml (1.0ms)
+  Rendered players/_form.html.haml (410.0ms)
+Completed 200 OK in 457ms (Views: 457.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "player"=>{"fname"=>"first name", "lname"=>"last name", "team"=>"", "league"=>"", "atbats"=>"0", "hits"=>"0", "runs"=>"0", "rbi"=>"0"}, "commit"=>"Create Player"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 0], ["created_at", Mon, 28 May 2012 00:25:23 UTC +00:00], ["fname", "first name"], ["hits", 0], ["league", ""], ["lname", "last name"], ["rbi", 0], ["runs", 0], ["team", ""], ["updated_at", Mon, 28 May 2012 00:25:23 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:60663/players/1
+Completed 302 Found in 5ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/players/1" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" ORDER BY "players"."id" DESC LIMIT 1
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY "players"."id" DESC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (7.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 7], ["created_at", Mon, 28 May 2012 00:25:23 UTC +00:00], ["fname", "Fname 6"], ["hits", 6], ["league", nil], ["lname", "Lname 6"], ["rbi", 6], ["runs", 6], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:23 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (7.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/players/1" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "player"=>{"fname"=>"edited fname", "lname"=>"edited lname", "team"=>"", "league"=>"", "atbats"=>"7", "hits"=>"6", "runs"=>"6", "rbi"=>"6"}, "commit"=>"Update Player", "id"=>"1"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mUPDATE "players" SET "fname" = 'edited fname', "lname" = 'edited lname', "team" = '', "league" = '', "updated_at" = '2012-05-28 00:25:23.672394' WHERE "players"."id" = 1[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://127.0.0.1:60663/players/1
+Completed 302 Found in 3ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/players/1" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (7.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 8], ["created_at", Mon, 28 May 2012 00:25:23 UTC +00:00], ["fname", "Fname 7"], ["hits", 7], ["league", nil], ["lname", "Lname 7"], ["rbi", 7], ["runs", 7], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:23 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/players/1" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "players" WHERE "players"."id" = $1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:60663/players
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (7.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+
+
+Started GET "/players/-1" for 127.0.0.1 at 2012-05-27 20:25:23 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"-1"}
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = $1 LIMIT 1  [["id", "-1"]]
+Filter chain halted as :get_player rendered or redirected
+Completed 404 Not Found in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (11.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (4.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 1], ["created_at", Mon, 28 May 2012 00:25:24 UTC +00:00], ["fname", "FName"], ["hits", 0], ["league", nil], ["lname", "LName"], ["rbi", 0], ["runs", 0], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 9], ["created_at", Mon, 28 May 2012 00:25:24 UTC +00:00], ["fname", "Fname 8"], ["hits", 8], ["league", nil], ["lname", "Lname 8"], ["rbi", 8], ["runs", 8], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:24 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (8.0ms)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL
+  [1m[36m (6.0ms)[0m  [1mTRUNCATE TABLE "players" RESTART IDENTITY CASCADE;[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["atbats", 10], ["created_at", Mon, 28 May 2012 00:25:24 UTC +00:00], ["fname", "Fname 9"], ["hits", 9], ["league", nil], ["lname", "Lname 9"], ["rbi", 9], ["runs", 9], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT "players".* FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "players" [0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "players" 
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 11], ["created_at", Mon, 28 May 2012 00:25:24 UTC +00:00], ["fname", "Fname 10"], ["hits", 10], ["league", nil], ["lname", "Lname 10"], ["rbi", 10], ["runs", 10], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:24 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  Rendered shared/_error_msg.html.haml (0.0ms)
+  Rendered players/_form.html.haml (6.0ms)
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "players" DISABLE TRIGGER ALL[0m
+  [1m[35m (6.0ms)[0m  TRUNCATE TABLE "players" RESTART IDENTITY CASCADE;
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "players" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "players" ("atbats", "created_at", "fname", "hits", "league", "lname", "rbi", "runs", "team", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["atbats", 12], ["created_at", Mon, 28 May 2012 00:25:24 UTC +00:00], ["fname", "Fname 11"], ["hits", 11], ["league", nil], ["lname", "Lname 11"], ["rbi", 11], ["runs", 11], ["team", nil], ["updated_at", Mon, 28 May 2012 00:25:24 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT "players".* FROM "players" [0m

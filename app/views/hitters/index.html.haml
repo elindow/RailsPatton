@@ -1,0 +1,37 @@
+﻿%h1 hitters
+
+="Hitter Count: #{Hitter.count}"
+%table
+	%tr
+		%th= "F Name  "
+		%th= "L Name  "
+		%th= "AB  "
+		%th= "H  " 
+		%th= "Dbl   "
+		%th= "Trpl  "
+		%th= "HR"
+		%th= "BA"
+		%th= "Runs"
+		%th= "RBI	"
+		%th= "SB  "
+		%th= "CS"
+		
+	-	@hitters.each do |hitter|
+		%tr
+			%td= if hitter.player.nil? then "Unknown" else hitter.player.fname end
+			%td= if hitter.player.nil? then "Unknown" else hitter.player.lname end		
+			%td= hitter.ab
+			%td= hitter.h
+			%td= hitter.dbl
+			%td= hitter.trp
+			%td= hitter.hr
+			%td= ".#{hitter.ba}"
+			%td= hitter.r
+			%td= hitter.rbi
+			%td= hitter.sb
+			%td= hitter.cs
+			%td= link_to 'Show', hitter_path(hitter)
+			%td= link_to 'Edit', edit_hitter_path(hitter)
+			%td= link_to 'Destroy', hitter, :confirm => "Are you sure?", :method => :delete
+%br			
+= link_to "New hitter", new_hitter_path

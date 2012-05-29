@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 3) do
+ActiveRecord::Schema.define(:version => 20120528174219) do
+
+  create_table "hitters", :force => true do |t|
+    t.integer  "ab"
+    t.integer  "h"
+    t.integer  "dbl"
+    t.integer  "trp"
+    t.integer  "hr"
+    t.integer  "r"
+    t.integer  "rbi"
+    t.integer  "sb"
+    t.integer  "cs"
+    t.integer  "g"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "player_id"
+  end
 
   create_table "players", :force => true do |t|
     t.string   "fname"

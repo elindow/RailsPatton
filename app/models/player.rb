@@ -6,6 +6,8 @@
 	validates_presence_of :runs
 	validates_presence_of :rbi
 	
+	has_one :hitter
+	
 	def ba
 		self.hits || self.hits= 0
 		self.atbats || self.atbats = 1	#atbats must be non-zero to avoid divzero

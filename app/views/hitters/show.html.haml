@@ -1,0 +1,20 @@
+%h1 Hitter#show
+%p Find me in app/views/hitter/show.html.haml
+
+-# %h2 #{@hitter.fname} #{@hitter.lname}
+-# %h4 #{@hitter.league}:#{@hitter.team}
+
+%ul
+	%li= "AB: #{@hitter.ab}"
+	%li= "Hits: #{@hitter.h}"
+	%li= "Dbl: #{@hitter.dbl}"
+	%li= "Trpl: #{@hitter.trp}"
+	%li= "HR: #{@hitter.hr}"
+	%li= "Runs: #{@hitter.r}"
+	%li= "RBI: #{@hitter.rbi}"	
+	%li= "SB: #{@hitter.sb}"
+	%li= "CS: #{@hitter.ba}"
+	
+= link_to 'Edit', edit_hitter_path(@hitter)
+|
+= link_to 'Back', hitters_path
